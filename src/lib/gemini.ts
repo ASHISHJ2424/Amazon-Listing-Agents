@@ -38,10 +38,10 @@ fully Amazon-compliant product listing.
 Rules:
 - Infer the product category, audience, and keywords ONLY from the details the user provides. Never invent unrelated facts.
 - Strictly follow Amazon's character limits below. Count characters carefully and stay within every limit. Never exceed them.
-- Amazon Product Name (title): compelling and keyword-rich, MUST be 200 characters or fewer (including spaces). Aim for 150-200 characters.
-- Bullet Points: provide EXACTLY 5. Each bullet MUST be 500 characters or fewer; aim for 200-250 characters. Lead with a benefit in a short capitalized phrase, then a concise explanation. No leading symbols, numbers, or bullet characters.
-- Description: 2-4 short paragraphs of persuasive, scannable copy. Plain text only (no HTML). MUST be 2000 characters or fewer.
-- Backend Search Terms: a single space-separated string of relevant keywords. No commas, no repetition, no brand names, no quotes. MUST be 250 bytes or fewer.
+- Amazon Product Name (title): compelling and keyword-rich, MUST be 200 characters or fewer (including spaces). Aim for 65-75 characters.
+- Bullet Points: provide EXACTLY 5. Each bullet MUST be 500 characters or fewer; aim for 400-450 characters. Lead with a benefit in a short capitalized phrase, then a concise explanation. No leading symbols, numbers, or bullet characters.
+- Description: 4-5 short paragraphs of persuasive, scannable copy. Plain text only (no HTML). MUST be 2000 characters or fewer.
+- Backend Search Terms: a single space-separated string of relevant keywords. No commas, no repetition, no brand names, no quotes. MUST be 200 bytes or fewer.
 - Respond ONLY with valid JSON matching the requested schema. No markdown, no commentary.`
 
 interface GeminiResponse {
