@@ -2,10 +2,10 @@ import type { ListingResult } from "./types"
 
 // Amazon listing character/byte limits
 export const AMAZON_LIMITS = {
-  title: 200,
+  title: 75,
   bullet: 500,
   description: 2000,
-  searchTerms: 250, // bytes
+  searchTerms: 200, // bytes
 } as const
 
 const byteLength = (str: string) => new TextEncoder().encode(str).length
