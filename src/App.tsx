@@ -6,12 +6,15 @@ import Loading from "./components/Loading"
 import ErrorMessage from "./components/ErrorMessage"
 import { generateListing } from "./lib/gemini"
 import type { ListingResult } from "./lib/types"
-
+import { auth, provider, db } from "./firebase";
+import { signInWithPopup } from "firebase/auth";
+import { doc, setDoc } from "firebase/firestore";
 type Status = "idle" | "loading" | "success" | "error"
 
 export default function App() {
   const [status, setStatus] = useState<Status>("idle")
   const [result, setResult] = useState<ListingResult | null>(null)
+const [user, setUser] = useState<any>(null);
   const [error, setError] = useState("")
   const [lastInput, setLastInput] = useState("")
 
