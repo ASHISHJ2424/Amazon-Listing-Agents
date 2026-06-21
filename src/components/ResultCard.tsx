@@ -18,12 +18,9 @@ export default function ResultCard({
   copyText,
   count,
   limit,
-  unit = "chars",
   children,
 }: ResultCardProps) {
   const [copied, setCopied] = useState(false)
-  const overLimit = count !== undefined && limit !== undefined && count > limit
-
   const handleCopy = async () => {
     try {
       await navigator.clipboard.writeText(copyText)
