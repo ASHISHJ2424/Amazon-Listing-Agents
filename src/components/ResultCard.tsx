@@ -8,8 +8,6 @@ interface ResultCardProps {
   count?: number
   /** Amazon maximum for this field */
   limit?: number
-  /** Unit label shown next to the count, e.g. "chars" or "bytes" */
-  unit?: string
   children: React.ReactNode
 }
 
