@@ -5,17 +5,13 @@ interface ResultCardProps {
   title: string
   copyText: string
   /** Current usage count (characters or bytes) */
-  count?: number
   /** Amazon maximum for this field */
-  limit?: number
   children: React.ReactNode
 }
 
 export default function ResultCard({
   title,
   copyText,
-  count,
-  limit,
   children,
 }: ResultCardProps) {
   const [copied, setCopied] = useState(false)
